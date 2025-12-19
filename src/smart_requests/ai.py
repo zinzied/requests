@@ -1,8 +1,8 @@
 """
-requests.ai
-~~~~~~~~~~~
+smart_requests.ai
+~~~~~~~~~~~~~~~~~
 
-This module provides AI capabilities for the Requests library.
+This module provides AI capabilities for the Smart Requests library.
 """
 
 import os

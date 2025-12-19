@@ -38,6 +38,7 @@ requires = [
     "idna>=2.5,<4",
     "urllib3>=1.21.1,<3",
     "certifi>=2017.4.17",
+    "google-generativeai",
 ]
 test_requirements = [
     "pytest-httpbin==2.1.0",
@@ -50,7 +51,7 @@ test_requirements = [
 
 about = {}
 here = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(here, "src", "requests", "__version__.py"), "r", "utf-8") as f:
+with open(os.path.join(here, "src", "smart_requests", "__version__.py"), "r", "utf-8") as f:
     exec(f.read(), about)
 
 with open("README.md", "r", "utf-8") as f:
@@ -65,7 +66,7 @@ setup(
     author=about["__author__"],
     author_email=about["__author_email__"],
     url=about["__url__"],
-    packages=["requests"],
+    packages=["smart_requests"],
     package_data={"": ["LICENSE", "NOTICE"]},
     package_dir={"": "src"},
     include_package_data=True,
